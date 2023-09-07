@@ -22,6 +22,8 @@ font-family:'Courier New', Courier, monospace;
 }
 
 
+
+
 header{
     background-color:var(--black);
     color: white;
@@ -46,19 +48,122 @@ header{
     font-family: Arial, Helvetica, sans-serif ;
     font-weight: 900;
     font-size:60px ;
-    padding-top: 100px;
     padding-left: 150px;
 }
 .description{
     padding-left: 150px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    color: var(--nude);
 }
+
+
+nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    padding-left: 860px;
+    padding-bottom: 20px;
+
+
+}
+
+a {
+    color: var(--nude);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    
+  
+}
+
+a:hover{
+    color: var(--dark-blue);
+}
+
+
+
 
 
 main{
-    background-color:var(--nude) ;
+    background-color: var(--nude);
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 100px 150px 100px;
+
 }
+
+.main_info{
+    padding-left:100px ;
+
+    
+}
+
+.main_table{
+    padding-left: 400px;
+    white-space: nowrap;
+    
+
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gray);
+    font-size: 40px;
+}
+
+h3{
+    color: var(--light-blue);
+    font-family: Arial, Helvetica, sans-serif ;
+    padding-top: 30px ;
+    
+}
+
+p{
+   padding-top: 5px;
+   color: var(--gray);
+}
+
+
+.table_1{
+    border-right: 3px solid var(--dark-blue) ;
+    white-space: nowrap;
+    padding-right: 20px ;
+    text-align: right;
+    color: var(--light-blue);
+    font-weight: bold;
+    margin-bottom: 300px;  
+}
+
+.main_table2{
+    white-space: nowrap;
+    padding-right: 60px;
+    color: var(--dark-blue);
+    margin-bottom: 300px;
+    padding-left: 10px;
+
+
+}
+
+td{
+    padding-top: 10px;
+}
+
 
 footer{
     background-color: var(--black);
+    padding: 70px 0 70px 0 ;
+    text-align: center;
+    color: var(--gray);
+}
+
+.p_1{
+    padding-right:100px ;
 }
