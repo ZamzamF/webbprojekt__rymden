@@ -1,174 +1,141 @@
+/* General styling */
 :root {
-    --light-blue: #00A1E0;
-    --nude: #FFF6E6;
-    --dark-blue: #00648B;
+    --light-blue: #00a1e0;
+    --nude: #fff6e6;
+    --dark-blue: #00648b;
     --black: #000000;
     --gray: #444444;
-}
-
-/*
-font-family: Arial, Helvetica, sans-serif;
-font-family:'Courier New', Courier, monospace;
-*/
-
-*{
+  }
+  
+  * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-
-}
-
-
-
-
-header{
-    background-color:var(--black);
-    color: white;
-    
-}
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 240px;
-    padding-top: 50px;
-   
-}
-
-
-
-.titel{
-    color: var(--light-blue);
-    font-family: Arial, Helvetica, sans-serif ;
-    font-weight: 900;
-    font-size: 70px;
-}
-.description{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-    padding-top: 10px;
-    color: var(--nude);
-}
-
-
-
-nav {
-    display:flex;
-    justify-content: space-between;
-}
-
-ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-left: 750px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-}
-li{
-    padding: 0 10px;;
-}
-
-a {
-    color: var(--nude);
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 10px;
-    
+  }
   
-}
-
-a:hover{
-    color: var(--dark-blue);
-}
-
-
-
-
-
-main{
-    background-color: var(--nude);
-    display:  flex;
+  a {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: var(--nude);
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+  }
+  
+  /* Styling the header*/
+  /*------------------ The Landing Page ------------*/
+  .landing_page {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 150px 100px 150px 100px;
-
-}
-
-
-h2{
-    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .landing_info {
+    color: var(--nude);
+  }
+  
+  .landing_info h1 {
+    color: var(--light-blue);
+    font-weight: 900;
+    font-size: 70px;
+  }
+  
+  .landing_info p {
+    font-size: 19px;
+    padding-top: 5px;
+    color: var(--nude);
+  }
+  
+  .landing_img {
+    padding-top: 20px;
+  }
+  
+  /*------------------ The NavNar ------------*/
+  
+  nav {
+    padding-bottom: 20px;
+    padding-top: 35px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding: 0 150px;
+  }
+  
+  nav ul li a {
+    color: var(--nude);
+    padding: 10px 10px;
+    font-weight: bold;
+  }
+  a:hover {
+    color: var(--dark-blue);
+  }
+  
+  /* Styling main section*/
+  
+  main {
+    background-color: var(--nude);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 150px 170px 130px;
+  }
+  
+  .content_left {
+    padding: 0px 270px 0px 0px;
+  }
+  .content_left h2 {
     color: var(--gray);
     font-size: 40px;
-}
-
-h3{
+  }
+  
+  .content_left h3 {
     color: var(--dark-blue);
-    font-family: Arial, Helvetica, sans-serif ;
-    padding-top: 30px ;
-    
-}
-
-p{
+    padding-top: 30px;
+  }
+  
+  .content_left p {
+    font-size: 16px;
     padding-top: 10px;
-    font-size: 20px;
     color: var(--gray);
-    font-family: Arial, Helvetica, sans-serif;
- }
-
-
-
-
-
-
-
-
-
-
-.right_content{
+  }
+  
+  .content_right {
     display: flex;
-}
-
-.table_1{
-    border-right: 2px solid var(--dark-blue) ;
-    white-space: nowrap;
-    padding-right: 10px ;
-    text-align: right;
+    font-family: "Courier New", Courier, monospace;
     color: var(--dark-blue);
+    white-space: nowrap;
+  }
+  
+  .table_1 {
+    border-right: 2px solid var(--dark-blue);
+    padding-right: 10px;
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 225px;  
-    font-size: 20px;
-    font-family:'Courier New', Courier, monospace;
-
-    
-}
-
-.table_2{
-    white-space: nowrap;
-    padding-right: 60px;
-    color: var(--dark-blue);
-    margin-bottom: 185px;  
-    padding-left: 10px;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+  }
+  
+  .table_2 {
+    font-size: 16px;
     font-weight: 500;
-
-
-}
-
-td{
+    padding-left: 10px;
+  }
+  
+  td {
     padding: 10px 0;
-}
-
-
-
-footer{
-    background-color: var(--black);
-    padding: 70px 0 70px 0 ;
+  }
+  
+  /* Styling footer section*/
+  footer {
     text-align: center;
     color: var(--gray);
-}
-
+    padding: 60px 0 60px 0;
+  }
+  
